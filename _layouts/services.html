@@ -1,0 +1,32 @@
+{% include header.html %}
+
+    <section id="title" class="concrete">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Services</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="/">Home</a></li>
+                        <li class="active">{{ page.title }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section><!--/#title-->
+
+    <section id="services" class="container">
+      <div class="row">
+          <div class="col-sm-4 ">
+                                <div class="center">
+
+                                        <i class="fa fa-{{ page.icon }}" style="font-size: 15em;"></i>
+
+                                </div>
+                            </div>
+              <div class="col-sm-8">
+                  {{ content }}
+    </section><!--#faqs-->
+
+{% include footer.html %}
